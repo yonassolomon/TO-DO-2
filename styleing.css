@@ -1,0 +1,85 @@
+
+.container{
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0px;
+    height: 100vh;
+    background: linear-gradient(135deg,hsl(179, 85%, 31%),rgb(11, 0, 0));
+}
+.section-part{
+    background: linear-gradient(135deg,red,blue);
+    padding: 10px;
+    border: 7px solid hsl(0, 0%, 0%);
+    width:50%;
+    margin: 13px auto 13px;
+    border-radius: 20px;
+}
+.section-part h1{
+    display: flex;
+    font-size: 50px;
+}
+.section-part h1 img{
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    margin-left: 14px;
+    border-radius: 30px;
+}
+#input-place{
+    border-radius: 15px;
+    background: black;
+    color: green;
+    width: 85%;
+    margin-left: 5px;
+}
+.buton-place{
+    border-radius: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+ul li{
+    padding: 2px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    list-style: none;
+    font-size: 17px;
+    padding:12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+ul li::before{
+    position: absolute;
+    content: '';
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;/*this one make the box circle*/
+    background-image:url(empty-circle.png);/*the image happened infront of the tasks*/
+    background-position: center;
+    background-size: cover;
+    top:12px;
+    left:8px;
+    border: 2px solid black;
+}
+.list1{
+    text-decoration: line-through;
+    color: black;
+}
+span{
+    
+    justify-content: space-between;
+    margin-left: 100px;
+    max-width: 16px;
+    height: 16px;
+    font-size: 20px;
+}
+span:hover{
+    background: red;
+}
+.list1::before{
+    background-image: url(uncheked-circle.png);
+}
+
